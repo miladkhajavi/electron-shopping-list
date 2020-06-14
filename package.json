@@ -1,0 +1,14 @@
+{
+  "name": "shoping-list",
+  "version": "1.0.0",
+  "description": "shopping list desktop app with electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Milad khajavi",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^9.0.4"
+  }
+}
