@@ -40,7 +40,7 @@ app.on('ready', () => {
 
 
 // create add window
-createAddWindow = () => {
+function createAddWindow() {
     addWindow = new BrowserWindow({
         width: 300,
         height: 200,
@@ -72,6 +72,7 @@ const mainMenuTemplate = [{
     label: 'امکانات',
     submenu: [{
             label: 'افزودن',
+            accelerator: process.platform == 'darwin' ? 'Command+N' : 'Ctrl+N',
             click() {
                 createAddWindow()
             }
